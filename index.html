@@ -1,0 +1,341 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description"
+        content="Portfolio of Jonathan Satriani Gracio Andrianto - Informatics student & web developer." />
+    <title>Jonathan Satriani Gracio Andrianto | Portfolio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+    <!-- Background glow -->
+    <div class="bg-glow" aria-hidden="true"></div>
+
+    <!-- Header -->
+    <header class="header" id="top">
+        <div class="container header-inner">
+            <a class="logo" href="#top" aria-label="Back to top">
+                <span class="logo-dot"></span>
+                <span>Jonathan</span>
+            </a>
+
+            <nav class="nav" aria-label="Primary">
+                <a href="#about">About</a>
+                <a href="#skills">Skills</a>
+                <a href="#projects">Projects</a>
+                <a href="#contact">Contact</a>
+            </nav>
+
+            <div class="header-actions">
+                <button class="btn ghost" id="themeBtn" type="button" aria-label="Toggle theme">🌙</button>
+                <a class="btn" href="#contact">Hire / Contact</a>
+                <button class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false">
+                    <span></span><span></span><span></span>
+                </button>
+            </div>
+        </div>
+
+        <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+            <a class="btn" href="#contact">Contact</a>
+        </div>
+    </header>
+
+    <!-- Hero -->
+    <main>
+        <section class="hero">
+            <div class="container hero-grid">
+                <div class="hero-text">
+                    <p class="badge">Informatics Student • Web Developer</p>
+                    <h1>
+                        Jonathan Satriani<br />
+                        Gracio Andrianto
+                    </h1>
+                    <p class="subtitle">
+                        I build clean, practical web apps using <b>React / Next.js</b> and <b>Laravel</b>.
+                        I enjoy turning ideas into real products with solid UI and maintainable code.
+                    </p>
+
+                    <div class="hero-cta">
+                        <a class="btn" href="#projects">View Projects</a>
+                        <a class="btn ghost" href="https://github.com/JonathanAndrianto123" target="_blank"
+                            rel="noreferrer">GitHub</a>
+                        <a class="btn ghost" href="#" id="downloadCvBtn">Download CV</a>
+                    </div>
+
+                    <div class="hero-meta">
+                        <div class="meta-item">
+                            <span class="meta-title">Focus</span>
+                            <span class="meta-value">Frontend + Fullstack</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-title">Stack</span>
+                            <span class="meta-value">JS • React • Next • Laravel</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-title">Location</span>
+                            <span class="meta-value">Indonesia</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-card">
+                    <div class="avatar-wrap">
+                        <img class="avatar" src="joe.jpeg" alt="Portrait of Jonathan"
+                            onerror="this.style.display='none'; document.getElementById('avatarFallback').style.display='grid';" />
+                        <div id="avatarFallback" class="avatar-fallback" style="display:none;">
+                            <div class="fallback-initials">J</div>
+                            <p class="fallback-text">Add your photo as <b>photo.jpg</b></p>
+                        </div>
+                    </div>
+
+                    <div class="hero-mini">
+                        <div class="mini-row">
+                            <span class="mini-label">Currently</span>
+                            <span class="mini-value">Building portfolio + applying for internships</span>
+                        </div>
+                        <div class="mini-row">
+                            <span class="mini-label">Favorite</span>
+                            <span class="mini-value">UI + API integration</span>
+                        </div>
+                        <div class="mini-row">
+                            <span class="mini-label">Fun fact</span>
+                            <span class="mini-value">I also play guitar 🎸</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About -->
+        <section class="section" id="about">
+            <div class="container">
+                <div class="section-head">
+                    <h2>About</h2>
+                    <p>
+                        I’m an Informatics student who enjoys building real-world apps. I care about clean UI, readable
+                        code,
+                        and finishing what I start.
+                    </p>
+                </div>
+
+                <div class="about-grid">
+                    <div class="card">
+                        <h3>What I do</h3>
+                        <ul class="bullets">
+                            <li>Build responsive UI with React / Next.js</li>
+                            <li>Integrate REST APIs & handle CRUD features</li>
+                            <li>Work with SQL & NoSQL databases</li>
+                            <li>Collaborate using Git & GitHub</li>
+                        </ul>
+                    </div>
+
+                    <div class="card">
+                        <h3>What I’m looking for</h3>
+                        <p class="muted">
+                            Internship opportunities in web development (Frontend / Fullstack), where I can learn fast,
+                            contribute consistently, and grow with a team.
+                        </p>
+                        <div class="chips">
+                            <span class="chip">Attention to Detail</span>
+                            <span class="chip">Teamwork</span>
+                            <span class="chip">Fast Learner</span>
+                            <span class="chip">Problem Solving</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills -->
+        <section class="section" id="skills">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Skills</h2>
+                    <p>Tools and technologies I use to build projects.</p>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="card">
+                        <h3>Frontend</h3>
+                        <div class="tags">
+                            <span>React.js</span><span>Next.js</span><span>HTML</span><span>CSS</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Backend</h3>
+                        <div class="tags">
+                            <span>Laravel</span><span>Node.js (Basic)</span><span>REST API</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Database</h3>
+                        <div class="tags">
+                            <span>MySQL</span><span>SQL</span><span>MongoDB</span>
+                        </div>
+                    </div>
+                    <div class="card">
+                        <h3>Tools</h3>
+                        <div class="tags">
+                            <span>Git</span><span>GitHub</span><span>AJAX</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects -->
+        <section class="section" id="projects">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Projects</h2>
+                    <p>
+                        A few projects I’ve built. Most are available on GitHub.
+                    </p>
+                </div>
+
+                <div class="projects-grid">
+                    <article class="project card">
+                        <div class="project-top">
+                            <h3>IPShield</h3>
+                            <span class="pill">Hackathon • Team</span>
+                        </div>
+                        <p class="muted">
+                            Web3 hackathon project built with Next.js. I contributed to frontend UI and API integration.
+                        </p>
+                        <div class="project-tags">
+                            <span>Next.js</span><span>JavaScript</span><span>Web3</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://github.com/theodhorex/hackathon" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-top">
+                            <h3>Personal Budgeting App</h3>
+                            <span class="pill">Laravel</span>
+                        </div>
+                        <p class="muted">
+                            Budgeting app for tracking income/expense with categories, filtering, and AJAX-based CRUD.
+                        </p>
+                        <div class="project-tags">
+                            <span>Laravel</span><span>MySQL</span><span>AJAX</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/personal-budgeting-laravel" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-top">
+                            <h3>JobEx</h3>
+                            <span class="pill">First Project</span>
+                        </div>
+                        <p class="muted">
+                            Full job portal website with separate flows for job hirers and job seekers, including
+                            employer registration, job posting, job search, and company logo upload.
+                        </p>
+                        <div class="project-tags">
+                            <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/jobex-laravel" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-top">
+                            <h3>StudyMate</h3>
+                            <span class="pill">Android</span>
+                        </div>
+                        <p class="muted">
+                            Student productivity Android app with core screens and user flows.
+                        </p>
+                        <div class="project-tags">
+                            <span>Android</span><span>Java/Kotlin</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/StudyMate" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+                </div>
+
+                <div class="projects-footer">
+                    <a class="btn" href="https://github.com/JonathanAndrianto123" target="_blank" rel="noreferrer">See
+                        more on GitHub</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact -->
+        <section class="section" id="contact">
+            <div class="container">
+                <div class="section-head">
+                    <h2>Contact</h2>
+                    <p>
+                        Want to collaborate or offer an internship? Let’s talk.
+                    </p>
+                </div>
+
+                <div class="contact-grid">
+                    <div class="card">
+                        <h3>Quick Links</h3>
+                        <div class="contact-links">
+                            <a href="https://github.com/JonathanAndrianto123" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                            <a href="https://www.linkedin.com/in/jonathanandrianto" target="_blank"
+                                rel="noreferrer">LinkedIn (add)</a>
+                            <a href="mailto:minelylitaay06@gmail.com">minelylitaay06@gmail.com</a>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <h3>Message</h3>
+                        <form class="form" id="contactForm">
+                            <label>
+                                <span>Name</span>
+                                <input type="text" name="name" placeholder="Your name" required />
+                            </label>
+                            <label>
+                                <span>Email</span>
+                                <input type="email" name="email" placeholder="you@email.com" required />
+                            </label>
+                            <label>
+                                <span>Message</span>
+                                <textarea name="message" rows="4" placeholder="Tell me about the role/project..."
+                                    required></textarea>
+                            </label>
+                            <button class="btn" type="submit">Send</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-inner">
+            <p class="muted">© <span id="year"></span> Jonathan Satriani Gracio Andrianto</p>
+            <a class="muted" href="#top">Back to top ↑</a>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
