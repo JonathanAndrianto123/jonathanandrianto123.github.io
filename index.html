@@ -162,7 +162,7 @@
             <div class="container">
                 <div class="section-head">
                     <h2>Skills</h2>
-                    <p>Tools and technologies I use to build projects.</p>
+                    <p>Tools and technologies I use to build web and mobile applications.</p>
                 </div>
 
                 <div class="skills-grid">
@@ -173,9 +173,9 @@
                         </div>
                     </div>
                     <div class="card">
-                        <h3>Backend</h3>
+                        <h3>Backend & Mobile</h3>
                         <div class="tags">
-                            <span>Laravel</span><span>Node.js (Basic)</span><span>REST API</span>
+                            <span>Laravel</span><span>Android (Java/Kotlin)</span><span>REST API</span><span>Node.js (Basic)</span>
                         </div>
                     </div>
                     <div class="card">
@@ -187,7 +187,7 @@
                     <div class="card">
                         <h3>Tools</h3>
                         <div class="tags">
-                            <span>Git</span><span>GitHub</span><span>AJAX</span>
+                            <span>Git</span><span>GitHub</span><span>AJAX</span><span>Postman</span>
                         </div>
                     </div>
                 </div>
@@ -200,24 +200,41 @@
                 <div class="section-head">
                     <h2>Projects</h2>
                     <p>
-                        A few projects I’ve built. Most are available on GitHub.
+                        A few projects I’ve built across web and mobile development. Most are available on GitHub.
                     </p>
                 </div>
 
                 <div class="projects-grid">
                     <article class="project card">
                         <div class="project-top">
-                            <h3>IPShield</h3>
-                            <span class="pill">Hackathon • Team</span>
+                            <h3>JalanBareng</h3>
+                            <span class="pill">Android App</span>
                         </div>
                         <p class="muted">
-                            Web3 hackathon project built with Next.js. I contributed to frontend UI and API integration.
+                            Carpooling & Ride-Sharing Android Application designed for trip sharing, ride coordination, and seamless mobile experience.
                         </p>
                         <div class="project-tags">
-                            <span>Next.js</span><span>JavaScript</span><span>Web3</span>
+                            <span>Android</span><span>Java/Kotlin</span><span>Ride-Sharing</span>
                         </div>
                         <div class="project-actions">
-                            <a class="btn ghost" href="https://github.com/theodhorex/hackathon" target="_blank"
+                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/JalanBareng" target="_blank"
+                                rel="noreferrer">GitHub</a>
+                        </div>
+                    </article>
+
+                    <article class="project card">
+                        <div class="project-top">
+                            <h3>StudyMate</h3>
+                            <span class="pill">Android App</span>
+                        </div>
+                        <p class="muted">
+                            Student productivity Android app with core screens, task tracking, and structured user flows.
+                        </p>
+                        <div class="project-tags">
+                            <span>Android</span><span>Java/Kotlin</span>
+                        </div>
+                        <div class="project-actions">
+                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/StudyMate" target="_blank"
                                 rel="noreferrer">GitHub</a>
                         </div>
                     </article>
@@ -242,11 +259,10 @@
                     <article class="project card">
                         <div class="project-top">
                             <h3>JobEx</h3>
-                            <span class="pill">First Project</span>
+                            <span class="pill">Job Portal</span>
                         </div>
                         <p class="muted">
-                            Full job portal website with separate flows for job hirers and job seekers, including
-                            employer registration, job posting, job search, and company logo upload.
+                            Full job portal website with separate flows for job hirers and job seekers, employer registration, job search, and logo upload.
                         </p>
                         <div class="project-tags">
                             <span>PHP</span><span>MySQL</span><span>HTML/CSS</span>
@@ -259,17 +275,17 @@
 
                     <article class="project card">
                         <div class="project-top">
-                            <h3>StudyMate</h3>
-                            <span class="pill">Android</span>
+                            <h3>IPShield</h3>
+                            <span class="pill">Hackathon • Team</span>
                         </div>
                         <p class="muted">
-                            Student productivity Android app with core screens and user flows.
+                            Web3 hackathon project built with Next.js. Contributed to frontend UI and API integration.
                         </p>
                         <div class="project-tags">
-                            <span>Android</span><span>Java/Kotlin</span>
+                            <span>Next.js</span><span>JavaScript</span><span>Web3</span>
                         </div>
                         <div class="project-actions">
-                            <a class="btn ghost" href="https://github.com/JonathanAndrianto123/StudyMate" target="_blank"
+                            <a class="btn ghost" href="https://github.com/theodhorex/hackathon" target="_blank"
                                 rel="noreferrer">GitHub</a>
                         </div>
                     </article>
@@ -288,7 +304,7 @@
                 <div class="section-head">
                     <h2>Contact</h2>
                     <p>
-                        Want to collaborate or offer an internship? Let’s talk.
+                        Want to collaborate or offer an opportunity? Let’s talk.
                     </p>
                 </div>
 
@@ -297,10 +313,10 @@
                         <h3>Quick Links</h3>
                         <div class="contact-links">
                             <a href="https://github.com/JonathanAndrianto123" target="_blank"
-                                rel="noreferrer">GitHub</a>
+                                rel="noreferrer">GitHub Profile</a>
                             <a href="https://www.linkedin.com/in/jonathanandrianto" target="_blank"
-                                rel="noreferrer">LinkedIn (add)</a>
-                            <a href="mailto:minelylitaay06@gmail.com">minelylitaay06@gmail.com</a>
+                                rel="noreferrer">LinkedIn Profile</a>
+                            <a href="mailto:joeandrianto777@gmail.com">joeandrianto777@gmail.com</a>
                         </div>
                     </div>
 
@@ -320,7 +336,8 @@
                                 <textarea name="message" rows="4" placeholder="Tell me about the role/project..."
                                     required></textarea>
                             </label>
-                            <button class="btn" type="submit">Send</button>
+                            <button class="btn" type="submit" id="contactSubmitBtn">Send Message</button>
+                            <div id="contactStatus" class="contact-status" style="display: none;"></div>
                         </form>
                     </div>
                 </div>
