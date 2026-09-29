@@ -455,6 +455,24 @@ input:focus, textarea:focus {
   border-color: rgba(255, 255, 255, 0.26);
 }
 
+.contact-status {
+  margin-top: 10px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  font-size: 13px;
+  line-height: 1.5;
+  background: rgba(59, 130, 246, 0.15);
+  border: 1px solid rgba(96, 165, 250, 0.3);
+  color: rgba(255, 255, 255, 0.95);
+}
+
+.contact-status code {
+  background: rgba(0, 0, 0, 0.3);
+  padding: 2px 6px;
+  border-radius: 4px;
+  font-family: monospace;
+}
+
 .footer {
   padding: 26px 0 36px;
   border-top: 1px solid rgba(255, 255, 255, 0.08);
